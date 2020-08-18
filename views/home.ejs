@@ -1,0 +1,25 @@
+<div id="user-name">
+    <% if(locals.user){ %>
+    <!-- if user is logged in show welcome note -->
+    <div>
+        <span id="welcome">Welcome <%= user.name %></span>
+    </div>
+    <% } %>
+</div>
+<div id="container">
+    <form id='form' method='post' action="/user/book">
+        <div id='date-part'>
+            <span class='label'>
+                Choose Date
+            </span>
+            <input type="date" name="date" id="date"/>
+        </div>
+        <div id='time-part'>
+            <span class='label'>
+                Select time
+            </span>
+            <input type="time" name="time" id="time"/>
+        </div>
+        <input type="submit" value="Book" id='book-btn'>
+    </form>
+</div>

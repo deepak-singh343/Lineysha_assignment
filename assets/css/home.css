@@ -1,0 +1,40 @@
+#welcome{
+    margin-left:40%;
+    color:red;
+    font-size:20px;
+    font-weight: 600;
+}
+#container{
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+#form {
+    width: 400px;
+    height: 200px;
+}
+span.label {
+    font-weight: 600;
+}
+input#date {
+    margin-left: 30px;
+    width: 270px;
+}
+div#date-part {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input#time {
+    margin-left: 41px;
+    width: 271px;
+}
+input#book-btn {
+    margin-top: 20px;
+    margin-left: 46%;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 8px;
+}

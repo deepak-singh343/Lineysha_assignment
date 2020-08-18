@@ -1,0 +1,20 @@
+<header>
+    <div id="logo">
+        <a href='/home'>Booking</a>
+    </div>
+    <div id="nav">
+        <ul>
+            <% if(locals.user){ %>
+            <!--if user is logged in show his name,draft,his bookings and signout -->
+            <span id="username">
+                <a href="/user/profile/<%= user._id%>"><%= user.name %></a>
+            </span>
+            <li><a href="/user/sign-out">Sign Out</a></li>
+            <% }else{ %>
+            <!-- if user is not logged in show signIn and Signout -->
+            <li><a href="/user/sign-in">Sign In</a></li>
+            <li><a href="/">Sign Up</a></li>
+            <% } %>
+        </ul>
+    </div>
+</header>

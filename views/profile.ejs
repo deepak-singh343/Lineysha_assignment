@@ -1,0 +1,28 @@
+<div class="profile-container">
+    <div class='bookings'>
+        <span class="heading">Your Bookings</span>
+        <div id="container1">
+            
+                    <table border='1px solid black'>
+                        <th>
+                            Booking Date
+                        </th>
+                        <th>
+                            Time Slot
+                        </th>
+                <%for (let i=0;i<Bookings.length;i++){%>
+                    <%if(locals.user.name==Bookings[i].user.name){%>
+                        <tr>
+                            <td>
+                                <%=Bookings[i].date%>
+                            </td>
+                            <td>
+                                <%=Bookings[i].time%>
+                            </td>
+                        </tr>
+                    <%}
+                }%>
+                    </table>             
+        </div> 
+    </div>
+</div>
